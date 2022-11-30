@@ -1,0 +1,57 @@
+@media (max-width:361px)  {
+     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+     #container{
+        
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 1600px;
+    }
+     
+     #logo_rejy{
+        display: none;
+        visibility: hidden;
+     }
+
+     #sec_logo{
+        display: none;
+        
+     }
+     nav{
+        display: none;
+     }
+
+     #menu{
+        width: 40px;
+        height: 40px;
+     }
+
+     header{
+        width: 360px;
+        background-color: aqua;
+     }
+
+    }
+
+    @media (max-width:480px)  {
+    
+    /* smartphones, Android phones, landscape iPhone */
+
+}
+
+@media (max-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+ }
+
+
+    @media (max-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+}
+
+@media (max-width:1025px) { 
+     /* big landscape tablets, laptops, and desktops */ 
+    }
+
+    @media (max-width:1281px) { 
+    /* hi-res laptops and desktops */ }
