@@ -11,7 +11,9 @@
          height: 2000px; 
          justify-content: space-between;
       }
-
+      #section_1{
+         flex-direction: column;
+      }
      #card_testi_section{
       display: flex;
       flex-direction: column;
