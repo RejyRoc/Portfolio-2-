@@ -197,7 +197,7 @@ font-size: 25px;
 #section_skills{
     padding: 20px;
     width:1160px ;
-    height: 520px;
+    
     background-color: rgb(247, 247, 247);
     display: flex;
     justify-content: space-between;
