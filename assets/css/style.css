@@ -1,141 +1,166 @@
-/* mis en page*/
-    body{
-        margin: 0 auto;
-        padding: 0 auto;
-        font-size: 20px;
-        font-family: 'Josefin Sans', sans-serif;
-        background-color: rgb(187, 58, 58);
-        
-    }
 
-    #container{
-        
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        max-width: 1280px;
-        height: 1600px;
-    }
-
-/* mis en page*/
-
-
-/* Header*/
-    header{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        width: 100%;
-        height: 70px;
-        align-content: flex-end;
-        justify-content: space-between;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 20px;
-
-        
-    }
-
-    nav ul{
-        list-style-type: none;
-        display: flex;
-    }
-    nav ul li{
-        margin: 10px;
-    }
-    nav a{
-        text-decoration: none;
-        color: rgb(0, 71, 138) ;
-    }
-    #titre_principal{
-        display: flex;
-        align-content: flex-end;
-        justify-content: space-between;
-        
-    }
-
-    #logo{
-        
-        font-weight: bold;
-        color:  rgb(0, 71, 138) ;
-        font-family: 'Josefin Sans', sans-serif;
-        margin: 30px;
-        margin-top: 20px;
-        text-decoration: none;
-
-        
-    }
-
-    nav ul li #contact-me{
-        margin: 20px;
-        
-        border-radius: 17px;
-        padding: 10px;
-        background-color: rgb(0, 71, 138) ;
-        color: white;
+/*universal css styling*/
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0px 25px 0px 25px;  
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
     
-    }
-    nav ul li #contact-me:hover{
-        margin: 20px;
-        border-radius: 17px;
-        padding: 10px;
-        background-color: rgb(252, 252, 252) ;
-        color: rgb(0, 71, 138);
-        border: solid 1px;
-    
-    }
+}
 
-/* Header*/
-
-
-/*Section About */
-
-
-#section_1{
-    background-color: rgb(247, 247, 247);
-    height: 550px;
+body{
+    background: rgb(247, 247, 247)
+}
+#container{
+    background: rgb(247, 247, 247);
     width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
     display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
+    flex-direction: column;
+    color:rgb(3, 3, 3);
+}
+
+/*======================Header*==============================*/
+.color{
+    background: rgb(247, 247, 247)
+}
+header{
+    padding:0 100px;
+    width:100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    align-items:center;
+}
+header .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-brand{
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+.humburger{
+    font-size: 24px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;   
+}
+/* =======================close button===============================*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 2em;
+    font-weight:bold;
+    cursor: pointer;
+    display: none;
+}
+.nav-menu{
+    display: flex;
+}
+.nav-link{
+    line-height: 80px;
+    
+    font-weight: 500px;
    
-    padding: 20px;
-
+}
+.nav-link:hover{
+    color:#27a6fb;
+}
+.active:hover,.active{
+    color:white;
 }
 
-
-/*about_rejy*/
-#about_rejy div p {
-    margin: 0px;
+header{ 
+    width:100%;
+    height: 80px;
 }
-
-#about_rejy{
-    width: 500px;
+.nav-brand{
+    font-size: 2em;
+    font-weight: 700px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.humburger{
+    font-size: 24px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+    padding:5px;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 2em;
+    font-weight:bold;
+    cursor: pointer;
+    display: none;
+}
+.nav-menu{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+.nav-menu li{
+    padding-left: 15px;
+}
+#rejy{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact_me{
+    margin: 20px;
+    border-radius: 17px;
+    padding: 10px;
+    background-color: rgb(0, 71, 138) ;
+    color: white;
+
+}
+
+/* =====================================header==================================*/
+
+/* =====================================Section about==================================*/
+#section_1{
+    display: flex;
+    padding: 0 100px;
+    padding-top:40px ;
     align-items: center;
-    align-content: center;
+   
 }
-#t{
-    width: 400px;
+#about_rejy{
+    width: 50%;
+    min-width:300px;
+    align-items: center;
+    display: flex;
+
+}
+#section_img{
+    width: 50%;
+    min-width: 300px;
+    align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
 }
-
-#hey{
+#hey p{
     padding: 0px;
     margin: 0px;
     font-size: 25px;
 
    
 }
-#moi{
-    font-size: 40px;
+#moi p{
+    font-size: 35px;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
 #about{
@@ -156,128 +181,117 @@
     border-radius: 5px;
     background-color: rgb(0, 71, 138) ;
     color: white;
-    padding: 10px;
-    
+    padding: 15px;
     text-decoration: none;
-    width: 120px;
+    width: 150px;
 }
 
 #Rejy_Joseph_Roc{
     color: rgb(0, 71, 138);
+    font-size: 40px;
 }
-/*about_rejy*/
-
-#logo_Rejy{
-   
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+#imgr{
+    width: 100%;
 }
 
-#img-r{
-   padding-bottom: 100px;
-    width: 350px;
-}
+/* =====================================Section about==================================*/
 
-/*Section About */
-
-/*Section Skills*/
-
-#skills h5{
-font-size: 25px;
-
-}
-
-#skills h3{
- font-size: 60px;
-
-}
-
-
+/* =====================================Section skills==================================*/
 #section_skills{
-    padding: 20px;
-    width:100% ;
-    
-    background-color: rgb(247, 247, 247);
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-content: center;
-
+    padding: 0 100px;
+    padding-top: 40px;
+    margin-top: 35px;
 }
+#skills h5{
+    font-size: 25px;
+}
+#skills h3{
+    font-size: 40px;
+}
+
 #card{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
     
 }
+.w1{
+    display: flex;
+}
+
 .row{
-    width: 315px;
-    height: 225px;
     background-color: rgb(178, 208, 248);
-    border-radius: 30px; 
-    padding: 20px;
-}
-
-/*Section Skills*/
-
-#section_portfolio{
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 40px;
     
-    background-color: rgb(247, 247, 247);
-    display: flex;
-    height: 1600px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-#porfolio h5 {
-    font-size: 25px;
 }
 
-#porfolio h3{
-    font-size: 60px;
-} 
+#img_ski{
+    width: 20px;
+    height: 20px;
+}
 
+.row h3{
+    font-size: 28px;
+    margin-left: 10px;
+}
+.row p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* =====================================Section skills==================================*/
 
+/* =====================================Section Project==================================*/
+#section_portfolio{
+    padding: 0 100px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
 #website{
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
-
-.glass{
-    background-image: url(../img/gradienta-m_7p45JfXQo-unsplash.jpg);
-    background-size:cover;
+.img_work{
+    width: 200px;
+}
+#skills{
+    padding-bottom: 20px;
 }
 .to{
-    
     width: 300px;
     height: 500px;
+    margin: 0 5px;
+    padding: 0 5px;
+    align-items: center;
     background-color:rgba(12, 129, 231, 0.103) ;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 5px 5px rgb(48, 66, 82);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     
 }
-
-.img_work{
-    width: 300px;
-    height: 225px;
-    
-
-}
-#img_ski{
-    width: 50px;
-    height: 40px;
-}
-
 .tom{
-    padding: 15px;
+    display: block;
+    padding-left: 10px;
+
+}
+.p_button{
+    margin-top: 20px;
+}
+.buti{
+    margin-top: 30px;
+    
 }
 .boutton_view{
     border-radius: 10px;
@@ -286,67 +300,75 @@ font-size: 25px;
     padding: 10px;
     width: 120px;
     text-decoration: none;
-    box-shadow: 5px 2.5px 2.5px rgb(48, 66, 82)
+    box-shadow: 5px 2.5px 2.5px rgb(48, 66, 82);
+    bottom: 50px;
+    
 }
+/* =====================================Section Project==================================*/
 
-/*Section Skills*/
-
-/*Section Testimonial*/
-
+/* =====================================Section Testimonial==================================*/
+.card_testimonials{
+    width: 300px;
+    border: solid;
+    height: 270px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin:0 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+    border: 1px solid rgba(24, 24, 24, 0.3);
+}
 #testimonials{
     width: 100%;
-    height: 700px;
+    height: 100%;
     background-color: rgb(224, 237, 255);
     display: flex;
     flex-direction: column;
     padding: 20px ;
-    padding-bottom: 120px;
-    padding-top: 80px;
+    
+    padding: 80px 100px;
 
 }
 #card_testi_section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-#titre_testimonials h3{
-    font-size: 60px;
-}
-
-.card_testimonials{
-    width: 320px;
-    border: solid;
-    height: 250px;
-    padding: 20px;
+.p_testi{
     font-size: 15px;
-    text-align: center;
-    border-radius: 15px;
-    
 }
- /* Contact me */
+/* =====================================Section Testimonial==================================*/
+
+/* =====================================Section Contact me ==================================*/
+
 #contact{
     padding: 20px;
     width:100% ;
     height: 870px;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 132, 132);
     display: flex;
     justify-items:center ;
     align-items: center;
     flex-direction: column;
-    
 }
-
 #form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    
 }
-
 .titre_git{
     text-align: center;
 }
+
+
+
+
+
+
 
 #first{
     display: flex;
@@ -368,7 +390,6 @@ font-size: 25px;
     display: flex;
     flex-direction: column;
     width: 300px;
-    padding: 10px;
 }
 
 .signature{
@@ -436,7 +457,6 @@ font-size: 25px;
 
 #button{
     width: 750px;
-    
     padding: 20px;
     align-items: center;
     display: flex;
@@ -449,60 +469,11 @@ font-size: 25px;
    height: 45px;
    font-family: 'Josefin Sans', sans-serif;
    border-radius: 5px;
-    background-color: rgb(0, 71, 138) ;
-    color: white;
-    border: none;
-    font-style: bold;
-    font-size: 20px;
+   background-color: rgb(0, 71, 138) ;
+   color: white;
+   border: none;
+   font-style: bold;
+   font-size: 20px;
 }
 
-#mesaj{
-    border-radius: 20px;
-}
-
-footer{
-    background-color: rgb(247, 247, 247);
-        display: flex;
-        width: 100%;
-        height: 70px;
-        align-content: flex-end;
-        justify-content: space-between;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 20px;
-        border-bottom: 1px solid;
-        padding: 20px;
-        
-}
-
-.icone{
-    width: 30px;
-    height: 30px;
-}
-#social{
-    
-    height: 30px;
-    width: 200px;
-}
-
-#dressement{
-    position: relative;
-    top: 25px;
-}
-
-footer nav ul li a {
-    color: black;
-}
-
-footer #titre_principal a {
-    color: black;
-}
-
-#droit{
-    background-color: rgb(247, 247, 247);
-    width: 100%px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
+/* =====================================Section Contact me ==================================*/
