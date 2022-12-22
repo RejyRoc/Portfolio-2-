@@ -350,15 +350,22 @@ header{
     padding: 80px 100px;
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 0.5 2.5;
+    grid-template-areas: 
+        "nav nav"
+        "content1 content2"
+    ;
     
 }
 #sec-img-roc{
+    grid-area: content1;
 }
 #social{
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ grid-area: content2;
 }
 #img-roc{
    height: 500px;  
@@ -374,11 +381,17 @@ header{
 .head{
     align-items: center;
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px ;
     
 }
 .head h1{
     font-size: 40px;
-    font-weight:bold ;
+    font-weight:bold; 
+    grid-area: nav;
+    
 }
 
 .card-socio{
